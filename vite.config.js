@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Vite config for GitHub Pages deployment.
 export default defineConfig({
-  base: '/ConnecXia/',   // <-- VERY IMPORTANT
+  // Repository subpath base URL.
+  base: '/ConnecXia/',
+  // React plugin integration.
   plugins: [react()],
 })

@@ -1,5 +1,6 @@
 @import "./theme.css";
 
+/* Base reset and typography */
 * { box-sizing: border-box; }
 html { font-size: var(--font-size-base); }
 body {
@@ -11,19 +12,23 @@ body {
   min-height: 100vh;
 }
 
+/* Default inline element behavior */
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; }
 
+/* Shared content container */
 .container {
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 18px;
 }
 
+/* Shared vertical section spacing */
 .section {
   padding: 56px 0;
 }
 
+/* Shared card surface style */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -31,6 +36,7 @@ button { font-family: inherit; }
   box-shadow: var(--shadow);
 }
 
+/* Shared heading utility */
 .h1 {
   font-size: var(--font-size-xl);
   line-height: 1.15;
@@ -38,6 +44,7 @@ button { font-family: inherit; }
   letter-spacing: -0.02em;
 }
 
+/* Shared paragraph utility */
 .p {
   margin: 0;
   color: var(--muted);
@@ -45,6 +52,7 @@ button { font-family: inherit; }
   line-height: 1.6;
 }
 
+/* Shared small paragraph utility */
 .p-sm {
   margin: 0;
   color: var(--muted);

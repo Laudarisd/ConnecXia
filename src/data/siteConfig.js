@@ -1,10 +1,12 @@
 // Global config: colors, fonts, sizes, image paths, partner list, etc.
 export const siteConfig = {
-  brand: "Connexia",
-  motto: "Connexia = The Power of Strategic Connection",
+  // Brand identity
+  brand: "ConnecXia",
+  motto: "The Power of Strategic Connection",
   description:
     "We connect companies with world-class universities and research labs to build high-impact collaborations, proposals, and measurable innovation outcomes.",
 
+  // Navbar dropdown links
   nav: {
     dropdownLabel: "Menu",
     items: [
@@ -14,6 +16,7 @@ export const siteConfig = {
     ],
   },
 
+  // Hero section slider config
   hero: {
     slides: [
       "/src/assets/images/slide1.jpg",
@@ -23,6 +26,7 @@ export const siteConfig = {
     slideIntervalMs: 3500,
   },
 
+  // Home focus card content
   focusCards: [
     {
       title: "Industry ↔ Academia Matching",
@@ -42,6 +46,7 @@ export const siteConfig = {
     },
   ],
 
+  // Partner marquee labels
   partners: [
     "University Partners",
     "Global Research Labs",
@@ -53,6 +58,7 @@ export const siteConfig = {
     "Industry Associations",
   ],
 
+  // Footer and contact page details
   contact: {
     email: "hello@connexia.io",
     location: "Seoul, South Korea (Global Remote)",

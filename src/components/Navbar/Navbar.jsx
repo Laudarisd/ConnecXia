@@ -5,10 +5,12 @@ import { siteConfig } from "../../data/siteConfig.js";
 import "./Navbar.css";
 
 export default function Navbar() {
+  // Dropdown open state.
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   const location = useLocation();
 
+  // Navigation links from central config.
   const items = useMemo(() => siteConfig.nav.items, []);
 
   // Close dropdown on route change
@@ -29,18 +31,31 @@ export default function Navbar() {
   return (
     <header className="cx-nav">
       <div className="container cx-nav__inner">
+        {/* Left: brand logo + name */}
         <Link className="cx-brand" to="/">
-          <Logo size={40} />
+          <Logo size={50} />
           <div className="cx-brand__text">
             <div className="cx-brand__name">{siteConfig.brand}</div>
-            <div className="cx-brand__sub">Strategic collaboration</div>
+            {/* <div className="cx-brand__sub">Strategic collaboratio</div> */}
           </div>
         </Link>
 
+        {/* Right: dropdown menu trigger + panel */}
         <div className="cx-nav__right" ref={menuRef}>
-          <button className="cx-dd-btn" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
-            {siteConfig.nav.dropdownLabel}
-            <span className={`cx-dd-caret ${open ? "open" : ""}`} />
+          <button
+            className="cx-dd-btn"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label="Toggle menu"
+          >
+            {/* Accessible label for screen readers */}
+            <span className="sr-only">Toggle menu</span>
+            {/* Visual hamburger icon */}
+            <span className={`cx-menu-icon ${open ? "open" : ""}`} aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </span>
           </button>
 
           {open && (

@@ -1,9 +1,11 @@
+/* Statement card shell */
 .ourWord {
   padding: 22px;
   position: relative;
   overflow: hidden;
 }
 
+/* Decorative gradient glow */
 .ourWord::before {
   content: "";
   position: absolute;
@@ -13,8 +15,10 @@
   pointer-events: none;
 }
 
+/* Keep content above decorative layer */
 .ourWord > * { position: relative; }
 
+/* Section badge */
 .ourWord__badge {
   display: inline-flex;
   padding: 6px 10px;
@@ -26,11 +30,13 @@
   font-weight: 650;
 }
 
+/* Statement title */
 .ourWord__title {
   margin: 10px 0 10px;
   letter-spacing: -0.02em;
 }
 
+/* Key points list */
 .ourWord__points {
   margin-top: 14px;
   display: grid;

@@ -5,6 +5,7 @@ export default function About() {
   return (
     <section className="section">
       <div className="container">
+        {/* About summary card */}
         <div className="card" style={{ padding: 22 }}>
           <h1 className="h1">About Us</h1>
           <p className="p">

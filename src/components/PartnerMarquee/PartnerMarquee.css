@@ -1,3 +1,4 @@
+/* Partner bar shell */
 .partnerBar {
   padding: 18px 0;
   border-top: 1px solid var(--border);
@@ -5,6 +6,7 @@
   background: rgba(255,255,255,0.6);
 }
 
+/* Inner two-column layout */
 .partnerBar__inner {
   display: grid;
   grid-template-columns: 90px 1fr;
@@ -12,16 +14,19 @@
   gap: 14px;
 }
 
+/* Left label */
 .partnerBar__label {
   font-weight: 750;
   color: var(--muted);
 }
 
+/* Marquee viewport */
 .partnerBar__marquee {
   overflow: hidden;
   position: relative;
 }
 
+/* Scrolling track */
 .partnerBar__track {
   display: flex;
   gap: 10px;
@@ -29,6 +34,7 @@
   animation: cx-marquee 22s linear infinite;
 }
 
+/* Individual partner pill */
 .partnerBar__pill {
   border: 1px solid var(--border);
   background: rgba(247, 251, 255, 0.9);
@@ -39,11 +45,13 @@
   color: var(--muted);
 }
 
+/* Marquee animation */
 @keyframes cx-marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
+/* Motion accessibility fallback */
 @media (prefers-reduced-motion: reduce) {
   .partnerBar__track { animation: none; }
 }

@@ -1,3 +1,4 @@
+/* Vite starter app wrapper (currently not imported by app entry) */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,7 @@
   text-align: center;
 }
 
+/* Starter logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -14,10 +16,12 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+/* React logo hover variant */
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Logo spin animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -27,16 +31,19 @@
   }
 }
 
+/* Motion-enabled animation hook */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Starter card spacing */
 .card {
   padding: 2em;
 }
 
+/* Starter docs hint text */
 .read-the-docs {
   color: #888;
 }

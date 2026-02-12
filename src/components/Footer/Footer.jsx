@@ -6,11 +6,13 @@ export default function Footer() {
   return (
     <footer className="cx-footer">
       <div className="container cx-footer__inner">
+        {/* Brand identity block */}
         <div className="cx-footer__brand">
           <div className="cx-footer__name">{siteConfig.brand}</div>
           <div className="cx-footer__motto">{siteConfig.motto}</div>
         </div>
 
+        {/* Contact metadata columns */}
         <div className="cx-footer__cols">
           <div className="cx-footer__col">
             <div className="cx-footer__label">Contact</div>

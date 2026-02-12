@@ -7,16 +7,16 @@ import OurWord from "../components/OurWord/OurWord.jsx";
 export default function Home() {
   return (
     <>
-      {/* Home section: hero with half text / half sliding images */}
+      {/* Hero section */}
       <Hero />
 
-      {/* We Focus */}
+      {/* Focus cards section */}
       <Focus />
 
-      {/* Long partner bar scrolling left->right */}
+      {/* Partner marquee section */}
       <PartnerMarquee />
 
-      {/* Our Word section */}
+      {/* Brand statement section */}
       <OurWord />
     </>
   );

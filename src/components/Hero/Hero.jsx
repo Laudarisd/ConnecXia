@@ -3,9 +3,11 @@ import { siteConfig } from "../../data/siteConfig.js";
 import "./Hero.css";
 
 export default function Hero() {
+  // Slider assets and timing from site config.
   const slides = useMemo(() => siteConfig.hero.slides, []);
   const intervalMs = siteConfig.hero.slideIntervalMs;
 
+  // Active slide index.
   const [idx, setIdx] = useState(0);
 
   useEffect(() => {
@@ -17,16 +19,19 @@ export default function Hero() {
   return (
     <section className="section">
       <div className="container hero">
+        {/* Left panel: message and CTAs */}
         <div className="hero__left card">
           <div className="hero__leftInner">
             <h1 className="h1">{siteConfig.motto}</h1>
             <p className="p">{siteConfig.description}</p>
 
+            {/* Call-to-action buttons */}
             <div className="hero__ctaRow">
               <a className="hero__cta" href="/contact">Start a collaboration</a>
               <a className="hero__cta ghost" href="/about">Learn more</a>
             </div>
 
+            {/* Quick capability chips */}
             <div className="hero__mini">
               <div className="hero__chip">Industry ↔ University</div>
               <div className="hero__chip">Proposals & Grants</div>
@@ -35,6 +40,7 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Right panel: auto-rotating image slider */}
         <div className="hero__right card">
           <div className="hero__slider" aria-label="Image slider">
             {slides.map((src, i) => (

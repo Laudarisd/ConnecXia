@@ -12,8 +12,10 @@ import Contact from "./pages/Contact.jsx";
 export default function App() {
   return (
     <>
+      {/* Persistent top navigation */}
       <Navbar />
 
+      {/* Route-switched page content */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -22,6 +24,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
+      {/* Persistent footer */}
       <Footer />
     </>
   );

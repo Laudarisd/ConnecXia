@@ -4,6 +4,7 @@ export default function Aim() {
   return (
     <section className="section">
       <div className="container">
+        {/* Aim statement card */}
         <div className="card" style={{ padding: 22 }}>
           <h1 className="h1">Our Aim</h1>
           <p className="p">
